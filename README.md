@@ -1,7 +1,7 @@
 This integration is a Matillion shared job that will tokenize any columns in a table that match a user-created list of classifiers. ALTR will then govern the columns to allow policy to be placed over that column to allow for role-based detokenization.
 
 ## Prerequisites
-- An Enterprise + ALTR account with API keys created (Settings -> Preferences -> API)
+- An Enterprise+ ALTR account with API keys created (Settings -> Preferences -> API)
 - ALTR service user is created - Credentials for your ALTR Service user https://docs.altr.com/tutorial-and-user-guide/connecting-your-snowflake-database
 
 ## Setup
