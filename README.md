@@ -1,3 +1,7 @@
+<a  href="https://altr.com">
+<img  src="./imgs/altr-logo.jpg"  alt="ALTR logo"  title="ALTR"  align="right"  height="40">
+</a>
+
 This integration is a Matillion shared job that will tokenize any columns in a table that match a user-created list of classifiers. ALTR will then govern the columns to allow policy to be placed over that column to allow for role-based detokenization.
 
 ## Prerequisites
@@ -32,12 +36,19 @@ create or replace external function altr_detokenize(string_col varchar, disposit
 5. Fill in the fields in the component. The fields are
 	1. **database**, **schema**, **table** - Location of the table to classify and protect
 	2. **ef_database**, **ef_schema**, **ef_tokenize_name**, **ef_detokenize_name** - sections of the fully qualified names of the external functions created in step 1
-	3. **ALTR_api_key** - ALTR API key (used when creating the api integration in step 1)
-	4. **ALTR_api_secret_name** - name of the ALTR API secret (stored under "Project" -> "Manage Project Group Passwords").
-	5. snowflake_hostname - Your Snowflake hostname in the format "example.snowflakecomputing.com"
-	6. Altr_service_user_name - The Snowflake username of the ALTR service user
-	7. Altr_service_user_password - The password for the ALTR service user
-	8. Classifiers_to_tokenize - a list of classifiers that should be tokenized
+	3. **altr_api_key** - ALTR API key (used when creating the api integration in step 1)
+	4. **altr_api_secret_name** - name of the ALTR API secret (stored under "Project" -> "Manage Project Group Passwords").
+	5. **snowflake_hostname** - Your Snowflake hostname in the format "example.snowflakecomputing.com"
+	6. **altr_service_user_name** - The Snowflake username of the ALTR service user
+	7. **altr_service_user_password** - The password for the ALTR service user
+	8. **classifiers_to_tokenize** - a list of classifiers that should be tokenized
 		1. Full List: "US_PASSPORT","US_SOCIAL_SECURITY_NUMBER","US_STATE","VEHICLE_IDENTIFICATION_NUMBER","US_DRIVERS_LICENSE_NUMBER","US_EMPLOYER_IDENTIFICATION_NUMBER","US_INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER","ICD9_CODE", "ICD10_CODE","IP_ADDRESS", "LOCATION", "MAC_ADDRESS", "PASSPORT", "PHONE_NUMBER", "STREET_ADDRESS","CREDIT_CARD_TRACK_NUMBER", "DATE_OF_BIRTH", "DATE", "FIRST_NAME", "LAST_NAME", "PHONE_NUMBER", "EMAIL_ADDRESS", "CREDIT_CARD_NUMBER", "PERSON_NAME"
+    9. **s3_bucket_name** - the name of the s3 bucket 
 6. Run the Component
 
+## Additional Resources
+https://docs.altr.com/
+
+https://www.youtube.com/channel/UCcqDY0wrRlQ8hQ_mjJNfkAA
+
+https://www.altr.com/resources
