@@ -43,7 +43,7 @@ create or replace external function altr_detokenize(string_col varchar, disposit
 	7. **altr_service_user_password** - The password for the ALTR service user
 	8. **classifiers_to_tokenize** - a list of classifiers that should be tokenized
 		1. Full List: "US_PASSPORT","US_SOCIAL_SECURITY_NUMBER","US_STATE","VEHICLE_IDENTIFICATION_NUMBER","US_DRIVERS_LICENSE_NUMBER","US_EMPLOYER_IDENTIFICATION_NUMBER","US_INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER","ICD9_CODE", "ICD10_CODE","IP_ADDRESS", "LOCATION", "MAC_ADDRESS", "PASSPORT", "PHONE_NUMBER", "STREET_ADDRESS","CREDIT_CARD_TRACK_NUMBER", "DATE_OF_BIRTH", "DATE", "FIRST_NAME", "LAST_NAME", "PHONE_NUMBER", "EMAIL_ADDRESS", "CREDIT_CARD_NUMBER", "PERSON_NAME"
-  9. **s3_bucket_name** - the name of the s3 bucket 
+    9. **s3_bucket_name** - the name of the s3 bucket 
 6. Run the Component
 
 ## Additional Resources
