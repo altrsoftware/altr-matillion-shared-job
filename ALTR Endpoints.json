@@ -80,21 +80,21 @@
       "constant" : "true",
       "value" : "application/json",
       "sensitiveData" : "false",
-      "paramID" : "77110205-a84f-4931-8031-ec2481ea4b86"
+      "paramID" : "c39facc7-531c-418e-a186-ed44bea1b093"
     }, {
       "name" : "Accept",
       "type" : "Header",
       "constant" : "true",
       "value" : "*/*",
       "sensitiveData" : "false",
-      "paramID" : "e9acf486-0ee8-4685-8c61-90574e531de9"
+      "paramID" : "a338ced5-6cf5-4dfa-bbee-492e6e398afd"
     }, {
       "name" : "Body",
       "type" : "BODY",
       "constant" : "false",
       "value" : "{\n    \"databaseId\": ,\n    \"tableName\": \"\",\n    \"columnName\": \"\",\n    \"nickname\": \"\",\n    \"protectMode\": \"\"\n}",
       "sensitiveData" : "false",
-      "paramID" : "fd00b75c-0aba-4ed2-a704-019072aa2a35"
+      "paramID" : "bb9191d7-9a21-483d-b90d-9a544367073a"
     } ]
   }, {
     "endpointName" : "POST Database",
@@ -126,31 +126,31 @@
       "constant" : "true",
       "value" : "application/json",
       "sensitiveData" : "false",
-      "paramID" : "58af1ea9-6e28-440b-a234-071934ae0841"
+      "paramID" : "b6eb869a-4c83-4a64-a2a1-92c45bef492a"
     }, {
       "name" : "Accept",
       "type" : "Header",
       "constant" : "true",
       "value" : "*/*",
       "sensitiveData" : "false",
-      "paramID" : "072ab5e0-8eec-471f-a5dc-0a9d33d73bc7"
+      "paramID" : "4e0c4cc0-3623-4f70-ba17-a141b61cdb9d"
     }, {
       "name" : "Body",
       "type" : "BODY",
       "constant" : "false",
       "value" : "{\n    \"friendlyDatabaseName\": \"\",\n    \"databaseType\": \"snowflake_external_functions\",\n    \"maxNumberOfConnections\": 5,\n    \"dataUsageHistory\": false,\n    \"hostname\": \"example.snowflakecomputing.com\",\n    \"databasePort\": 443,\n    \"databaseUsername\": \"\",\n    \"databasePassword\": \"\",\n    \"databaseName\": \"\",\n    \"warehouseName\": null,\n    \"snowflakeRole\": null\n}",
       "sensitiveData" : "false",
-      "paramID" : "f1476bef-aea8-41e9-8be4-5f260cc3eb78"
+      "paramID" : "2b9209d5-48bd-4d34-90a8-5c6f7999796f"
     } ]
   }, {
     "endpointName" : "POST GDLP",
     "connectorName" : "ALTR Endpoints",
     "description" : "",
-    "endpointUri" : "https://88b50g9ucg.execute-api.us-east-1.amazonaws.com/Classification",
+    "endpointUri" : "https://7fd8zl544j.execute-api.us-east-1.amazonaws.com/v1/classify",
     "httpRequestType" : "POST",
     "pagingEnabled" : false,
     "pagingType" : null,
-    "endpointSchema" : "{\"schema\":{\"type\":\"struct\",\"objectcontents\":{\"column\":{\"size\":2000,\"type\":\"VARCHAR\"},\"tag\":{\"size\":2000,\"type\":\"VARCHAR\"}}},\"containedInOuterArray\":true}",
+    "endpointSchema" : "{\"schema\":{\"type\":\"struct\",\"objectcontents\":{\"likelihood\":{\"type\":\"BIGINT\"},\"column\":{\"size\":2000,\"type\":\"VARCHAR\"},\"tag\":{\"size\":2000,\"type\":\"VARCHAR\"}}},\"containedInOuterArray\":true}",
     "schemaType" : "UNFLATTENED_NO_REPEAT_ELEMENT",
     "authEnabled" : true,
     "authType" : "Basic Auth",
@@ -170,19 +170,19 @@
       "name" : "Body",
       "type" : "BODY",
       "constant" : "false",
-      "value" : "{\n  \"username\": \"\",\n  \"password\": \"\",\n  \"account\": \"\",\n  \"database\": \"\",\n  \"schema\": \"\",\n  \"table\": \"\",\n  \"row_limit\": 25\n}",
+      "value" : "{\n  \"username\": \"\",\n  \"password\": \"\",\n  \"account\": \"\",\n  \"database\": \"\",\n  \"schema\": \"\",\n  \"table\": \"\"\n}",
       "sensitiveData" : "false",
-      "paramID" : "287d0f26-f816-4998-a9dd-2a4cd3973245"
+      "paramID" : "0a0ceedd-3202-49ac-8346-a618874484f9"
     } ]
   }, {
     "endpointName" : "Update DB",
     "connectorName" : "ALTR Endpoints",
     "description" : "",
-    "endpointUri" : "https://s3p5ycqtaa3l5pfroz6mqog5be0qhxnv.lambda-url.us-east-1.on.aws/",
+    "endpointUri" : "https://h3kapqpi7v5hbx4rjysuuscmia0auhpp.lambda-url.us-east-1.on.aws/",
     "httpRequestType" : "POST",
     "pagingEnabled" : false,
     "pagingType" : null,
-    "endpointSchema" : "{\"schema\":{\"type\":\"struct\",\"objectcontents\":{\"connectionString\":{\"type\":\"BOOLEAN\"},\"SFCount\":{\"type\":\"BIGINT\"},\"snowflakeRole\":{\"size\":2000,\"type\":\"VARCHAR\"},\"clientId\":{\"size\":2000,\"type\":\"VARCHAR\"},\"classificationStarted\":{\"type\":\"BOOLEAN\"},\"inProgress\":{\"type\":\"BIGINT\"},\"databaseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"warehouseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"lastConnectedTime\":{\"size\":2000,\"type\":\"VARCHAR\"},\"maxNumberOfBatches\":{\"type\":\"BIGINT\"},\"databaseType\":{\"size\":2000,\"type\":\"VARCHAR\"},\"CDMServiceEnabled\":{\"type\":\"BIGINT\"},\"maxNumberOfConnections\":{\"type\":\"BIGINT\"},\"hostname\":{\"size\":2000,\"type\":\"VARCHAR\"},\"friendlyDatabaseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"id\":{\"type\":\"BIGINT\"},\"dataUsageHistory\":{\"type\":\"BOOLEAN\"},\"databaseUsername\":{\"size\":2000,\"type\":\"VARCHAR\"},\"databasePort\":{\"type\":\"BIGINT\"}}}}",
+    "endpointSchema" : "{\"schema\":{\"type\":\"struct\",\"objectcontents\":{\"connectionString\":{\"type\":\"BOOLEAN\"},\"SFCount\":{\"type\":\"BIGINT\"},\"snowflakeRole\":{\"size\":2000,\"type\":\"VARCHAR\"},\"clientId\":{\"size\":2000,\"type\":\"VARCHAR\"},\"classificationStarted\":{\"type\":\"BOOLEAN\"},\"inProgress\":{\"type\":\"BIGINT\"},\"databaseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"warehouseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"lastConnectedTime\":{\"type\":\"TIMESTAMP\"},\"maxNumberOfBatches\":{\"type\":\"BIGINT\"},\"databaseType\":{\"size\":2000,\"type\":\"VARCHAR\"},\"CDMServiceEnabled\":{\"type\":\"BIGINT\"},\"maxNumberOfConnections\":{\"type\":\"BIGINT\"},\"hostname\":{\"size\":2000,\"type\":\"VARCHAR\"},\"friendlyDatabaseName\":{\"size\":2000,\"type\":\"VARCHAR\"},\"id\":{\"type\":\"BIGINT\"},\"dataUsageHistory\":{\"type\":\"BOOLEAN\"},\"databaseUsername\":{\"size\":2000,\"type\":\"VARCHAR\"},\"databasePort\":{\"type\":\"BIGINT\"}}}}",
     "schemaType" : "UNFLATTENED_NO_REPEAT_ELEMENT",
     "authEnabled" : true,
     "authType" : "Basic Auth",
@@ -204,21 +204,21 @@
       "constant" : "true",
       "value" : "application/json",
       "sensitiveData" : "false",
-      "paramID" : "d80581b6-9b6e-41c7-aa25-25aa10710ed3"
+      "paramID" : "65e2be45-dbeb-4854-97fb-a732558a571a"
     }, {
       "name" : "accept",
       "type" : "Header",
       "constant" : "true",
       "value" : "application/json",
       "sensitiveData" : "false",
-      "paramID" : "3312113d-96ef-49d7-a760-98ca86e9ce3a"
+      "paramID" : "4b95be0c-4ee7-4106-a285-b9ba64c28c76"
     }, {
       "name" : "Body",
       "type" : "BODY",
       "constant" : "false",
       "value" : "{\n  \"dataUsageHistory\": false,\n  \"shouldClassify\": true,\n  \"classificationType\": 3,\n  \"databaseId\":\n}",
       "sensitiveData" : "false",
-      "paramID" : "973bb389-0299-44bc-aa4b-74961f0560e3"
+      "paramID" : "e87d732c-98c8-4e35-8780-c02b2034edd9"
     } ]
   } ],
   "version" : "1.67.7"
