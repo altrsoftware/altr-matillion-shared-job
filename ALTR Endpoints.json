@@ -146,7 +146,7 @@
     "endpointName" : "POST GDLP",
     "connectorName" : "ALTR Endpoints",
     "description" : "",
-    "endpointUri" : "https://7fd8zl544j.execute-api.us-east-1.amazonaws.com/v1/classify",
+    "endpointUri" : "https://7fd8zl544j.execute-api.us-east-1.amazonaws.com/v1/query",
     "httpRequestType" : "POST",
     "pagingEnabled" : false,
     "pagingType" : null,
